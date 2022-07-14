@@ -1,0 +1,30 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "anakin",
+        "password": "jcosmvl",
+        "firstName": "anakin",
+        "lastName": "skywalker",
+        "address": "somewhere",
+        "city": "somewhereBigger",
+        "zip": 3141592
+      }
+    ],
+    "cars": [
+      {
+        "id": 1,
+        "name": "Ferrari 488",
+        "price": "3",
+        "img_url": "https://cdn.motor1.com/images/mgl/WVJ9q/s3/lanzamiento-ferrari-488-pista.jpg"
+      }
+    ],
+    "compras": [
+      {
+        "id": 1,
+        "product_name": "Bugatti Chiron",
+        "quantity": 1,
+        "totalPrice": "3"
+      }
+    ]
+  }

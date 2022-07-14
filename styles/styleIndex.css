@@ -1,0 +1,196 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+:root {
+    --darkgr: #6c757d;
+    --lightgr: lightgrey;
+    --lightbl: rgb(0, 187, 255);
+    --lightor: rgb(253, 150, 53);
+}
+
+html {
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+    background-color: var(--darkgr);
+}
+
+footer {
+    position:absolute;
+    bottom:0px;
+    height:40px;
+    z-index: 99;
+}
+
+header {
+    position:sticky;
+    top:0px;
+    z-index: 99;
+}
+
+.navbar-brand {
+	color: var(--lightgr);
+}
+.navbar-brand span{
+	color: var(--lightor);
+}
+
+.cta {
+	display: inline-block;
+	padding: 10px 30px;
+	color: var(--lightor);
+	background-color: transparent;
+	border: 4px solid var(--lightor);
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+}
+.cta:hover {
+	color: var(--darkgr);
+	background-color: var(--lightor);
+}
+
+/* Presentation Section */
+.carousel {
+	background-size:cover;
+	background-position: top center;
+	position: relative;
+	box-shadow: 0px 10px var(--lightgr); 
+	margin-bottom: 15px;
+}
+#presentation {
+	background-size:cover;
+	background-position: top center;
+	position: relative;
+	display:flex;
+	z-index: 1;
+	color: var(--lightor);
+}
+#presentation::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.7;
+	z-index: -1;
+	color: var(--lightor);
+}
+#presentation .presentation {
+	position:absolute;
+	max-width: 1200px;
+	margin: 100px auto;
+	padding: 0 100px;
+	justify-content: flex-start;
+	z-index:2;
+}
+#presentation h1 {
+	display: block;
+	width: fit-content;
+	font-size: 3rem;
+	position: relative;
+	color: transparent;
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 1s;
+}
+#presentation h1:nth-child(1) {
+	animation-delay: 1s;
+}
+#presentation h1:nth-child(2) {
+	animation-delay: 2s;
+}
+#presentation h1:nth-child(3) {
+	animation: text_reveal_name 0.5s ease forwards;
+	animation-delay: 3s;
+}
+#presentation h1 span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: var(--lightor);
+	animation: text_reveal_box 1s ease;
+	animation-delay: 0.5s;
+}
+#presentation h1:nth-child(1) span {
+	animation-delay: 0.5s;
+}
+#presentation h1:nth-child(2) span {
+	animation-delay: 1.5s;
+}
+#presentation h1:nth-child(3) span {
+	animation-delay: 2.5s;
+}
+/* End Presentation Section */
+
+/* About Me Section */
+
+#AboutMe {
+	position:relative;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	height: 3000px;
+	margin-top: 60px;
+}
+.abtmeWrapper {
+	max-width: 1000px;
+}
+#AboutMe .img {
+	height: 200px;
+}
+#AboutMe .row {
+	margin-top: 10px;
+}
+#AboutMe h1 {
+	margin-left: 20px;
+	color: var(--lightgr);
+	font-family: 'Montserrat';
+}
+#AboutMe h1 span {
+	margin-left: 20px;
+	color: var(--lightor);
+	font-family: 'Montserrat';
+}
+
+/* End About Me Section */
+
+
+
+
+
+
+/* Keyframes */
+@keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text_reveal {
+	100% {
+		color: var(--darkgr);
+	}
+}
+@keyframes text_reveal_name {
+	100% {
+		color: var(--lightor);
+		font-weight: 500;
+	}
+}
+/* End Keyframes */
