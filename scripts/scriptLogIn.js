@@ -1,4 +1,4 @@
-const url = "https://e-commerceapi-production.up.railway.app/users";
+const url = "https://personalwebsite-production.up.railway.app/users";
 
 // $(window).on("load",  async () => {
 //     try {
