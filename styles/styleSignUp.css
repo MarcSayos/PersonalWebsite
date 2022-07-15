@@ -17,6 +17,7 @@ html {
 
 footer {
     position:absolute;
+    margin-top: 27px;
     bottom:0px;
     height:40px;
     z-index: 99;

@@ -22,7 +22,7 @@ html {
 }
 
 .main-wrapper {
-    max-height: calc(100vh - 93px);
+    padding: 50px;
 }
 
 footer {

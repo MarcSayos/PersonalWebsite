@@ -1,14 +1,5 @@
 const url = "https://personalwebsite-production.up.railway.app/users";
 
-// $(window).on("load",  async () => {
-//     try {
-//         $("#myAlert").alert("close");
-//         console.log("#myAlert")
-//     } catch (error) {
-//         console.log(error)
-//     }
-// });
-
 async function verify(username, password) {
     person = (await axios.get(`${url}?username=${username}`)).data;
     console.log("The person is:" + person[0])

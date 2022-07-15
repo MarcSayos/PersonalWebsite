@@ -154,7 +154,7 @@ header {
 }
 #AboutMe h1 {
 	margin-left: 20px;
-	color: var(--lightgr);
+	color: white;
 	font-family: 'Montserrat';
 }
 #AboutMe h1 span {
@@ -162,7 +162,7 @@ header {
 	color: var(--lightor);
 }
 #AboutMe h3 {
-	color: var(--lightgr);
+	color: white;
 	font-family: 'Montserrat';
 }
 #AboutMe img {
