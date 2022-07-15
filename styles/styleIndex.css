@@ -5,6 +5,7 @@
     --lightgr: lightgrey;
     --lightbl: rgb(0, 187, 255);
     --lightor: rgb(253, 150, 53);
+	--gradient: linear-gradient(to bottom right, var(--darkgr), var(--lightgr));
 }
 
 html {
@@ -18,7 +19,8 @@ a {
 }
 
 body {
-    background-color: var(--darkgr);
+    /* background-color: var(--darkgr); */
+	background-image: var(--gradient);
 }
 
 footer {
@@ -138,20 +140,17 @@ header {
 
 #AboutMe {
 	position:relative;
-	display:flex;
-	flex-direction: column;
-	align-items: center;
-	height: 3000px;
+	height: 500px;
 	margin-top: 60px;
 }
-.abtmeWrapper {
+#AboutMe .container {
 	max-width: 1000px;
+	min-width: 400px;
+	display:flex;
+	flex-direction: row;
 }
-#AboutMe .img {
-	height: 200px;
-}
-#AboutMe .row {
-	margin-top: 10px;
+#AboutMe p {
+	color:white;
 }
 #AboutMe h1 {
 	margin-left: 20px;
@@ -161,12 +160,62 @@ header {
 #AboutMe h1 span {
 	margin-left: 20px;
 	color: var(--lightor);
+}
+#AboutMe h3 {
+	color: var(--lightgr);
 	font-family: 'Montserrat';
+}
+#AboutMe img {
+	box-shadow: -15px 15px var(--lightor);
+	margin-right: 30px;
+}
+.about .col-right {
+	text-align: left;
+	padding: 30px;
+}
+#about .col-right h1 {
+	text-align: left;
 }
 
 /* End About Me Section */
 
+/* Contact Section */
 
+#contact {
+	position:relative;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	height: 400px;
+	margin-top: 60px;
+}
+.contactWrapper {
+	max-width: 1000px;
+}
+#contact .img {
+	height: 200px;
+}
+#contact .row {
+	margin-top: 10px;
+}
+#contact h1 {
+	margin-left: 20px;
+	color: white;
+	font-family: 'Montserrat';
+}
+#contact h1 span {
+	margin-left: 20px;
+	color: var(--lightor);
+}
+#contact h5 {
+	color: var(--lightbl);
+}
+#contact p {
+	padding-top:20px;
+	text-align: center;
+}
+
+/* End Contact Section */
 
 
 

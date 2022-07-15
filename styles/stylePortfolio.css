@@ -1,0 +1,48 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+:root {
+    --darkgr: #6c757d;
+    --lightgr: lightgrey;
+    --lightbl: rgb(0, 187, 255);
+    --lightor: rgb(253, 150, 53);
+	--gradient: linear-gradient(to bottom right, var(--darkgr), var(--lightgr));
+}
+
+body {
+    min-height: 100vh;
+    margin:0;
+	background-image: url(../resources/blueBackground.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+html {
+	font-size: 15px;
+	scroll-behavior: smooth;
+}
+
+.main-wrapper {
+    max-height: calc(100vh - 93px);
+}
+
+footer {
+    position:absolute;
+    bottom:0px;
+    height:40px;
+    z-index: 99;
+	font-size: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+main h1 {
+	color: var(--darkgr);
+	font-family: 'Montserrat';
+}
+main h1 span {
+	color: var(--lightor);
+}
